@@ -11,7 +11,7 @@
         "prod": "npm run production",
         "production": "mix --production",
         "postinstall": "npm run prod",
-        "build": "cross-env NODE_ENV=production webpack"
+        "build": "webpack"
     },
     "devDependencies": {
         "@types/jquery": "^3.5.6",
