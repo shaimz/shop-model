@@ -39,7 +39,12 @@
         "@fortawesome/fontawesome-svg-core": "^1.2.35",
         "@fortawesome/free-solid-svg-icons": "^5.15.3",
         "@fortawesome/vue-fontawesome": "^3.0.0-4",
+        "@heroku/buildpack-registry": "^1.0.1",
+        "async-file": "^2.0.2",
+        "cli-ux": "^5.6.3",
         "cross-env": "^7.0.3",
+        "got": "^11.8.2",
+        "phoenix": "^1.5.9",
         "primeicons": "^4.1.0",
         "primevue": "^3.5.1",
         "style-loader": "^2.0.0",
@@ -52,6 +57,6 @@
     },
     "engines": {
         "node": "12.18.4",
-        "npm": "6.x"
+        "npm": "7.20.0"
     }
 }
