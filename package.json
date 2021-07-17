@@ -1,4 +1,5 @@
 {
+    "name": "shop-model",
     "private": true,
     "scripts": {
         "dev": "npm run development",
@@ -48,6 +49,7 @@
         "vuex": "^4.0.2"
     },
     "engines": {
-        "node": "12.18.4"
+        "node": "12.18.4",
+        "npm": "6.x"
     }
 }
