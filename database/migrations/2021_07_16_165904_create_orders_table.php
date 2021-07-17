@@ -18,7 +18,6 @@ class CreateOrdersTable extends Migration
             $table->integer('user_id')->default(null)->nullable(true);
             $table->integer('count');
             $table->integer('total');
-            $table->string('address');
             $table->string('email')->default(null)->nullable(true);
             $table->string('phone')->default(null)->nullable(true);
             $table->timestamps();
