@@ -1,0 +1,15 @@
+{
+    "compilerOptions": {
+        "sourceMap": true,
+        "strict": true,
+        "module": "es2020",
+        "moduleResolution": "node",
+        "target": "es2020",
+        "skipLibCheck": true,
+        "esModuleInterop": true,
+        "experimentalDecorators": true
+    },
+    "include": [
+        "./resources/**/*"
+    ]
+}

@@ -1,0 +1,77 @@
+// Fonts
+@import url('https://fonts.googleapis.com/css?family=Nunito');
+
+// Variables
+@import 'variables';
+
+// Bootstrap
+@import '~bootstrap/scss/bootstrap';
+
+@mixin opacityStair($fade: 20, $step: 100) {
+    // Recursive sass example
+
+    & + .children > .padding > .category-name {
+        padding-left: $fade+px;
+        @if $step <= $fade {
+            // exit
+        } @else {
+            @include opacityStair($fade + 20, $step);
+        }
+    }
+}
+
+@mixin padding($fade: 40, $step: 100) {
+    // Recursive sass example
+
+    & + .children > .padding > .category-name {
+        padding-left: $fade+px;
+        @if $step <= $fade {
+            // exit
+        } @else {
+            @include padding($fade + 20, $step);
+        }
+    }
+}
+
+.padding {
+    .category-name{
+        @include opacityStair();
+        padding-top:7px;
+        padding-bottom:7px;
+        &:hover{
+            background-color:#d9d9d9;
+        }
+    }
+}
+.category-dropdown{
+    max-width:250px;
+    max-height:150px;
+    overflow-y:scroll;
+    border:1px solid #d9d9d9;
+    margin-bottom:25px;
+}
+.add-category{
+    margin-top:20px;
+    margin-bottom:20px;
+}
+.data-items{
+    margin-top:20px;
+}
+.category-name{
+    cursor:pointer;
+}
+#app .content.d-flex{
+    .categories .category-name{
+        @include padding();
+        padding-left:20px;
+    }
+}
+.category-name.active{
+    background-color: #d9d9d9;
+}
+.p-menubar{
+    justify-content:center;
+}
+.active-cat{
+    background-color: #d9d9d9;
+}

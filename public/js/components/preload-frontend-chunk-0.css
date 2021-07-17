@@ -1,0 +1,26 @@
+/*!*********************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/vue-loader/dist/stylePostLoader.js!./node_modules/vue-loader/dist/index.js??ruleSet[1].rules[15].use[0]!./resources/js/views/public/Home.vue?vue&type=style&index=0&id=cc86e394&scoped=true&lang=css ***!
+  \*********************************************************************************************************************************************************************************************************************************************************************/
+
+.categories[data-v-cc86e394]{
+        padding:20px 0;
+        background-color: white;
+        max-width: 450px;
+        width:100%;
+}
+.categories h4[data-v-cc86e394]{
+        padding:0 20px
+}
+.content[data-v-cc86e394]{
+        margin-top:80px
+}
+.product-cards[data-v-cc86e394]{
+        display:grid;
+        grid-template-columns: repeat(3,minmax(350px,400px));
+}
+.product-cards .card[data-v-cc86e394]{
+        margin:25px;
+        padding:20px;
+}
+
+
