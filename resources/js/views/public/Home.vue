@@ -43,7 +43,7 @@
             const route = useRouter();
             const categories = computed(() => store.state.categories);
             const products = computed(() => store.state.products);
-            const cart = localStorage.getItem('cart') ? JSON.parse(localStorage.getItem('cart')) : [];
+            const cart = localStorage.getItem('cart') ? JSON.parse(String(localStorage.getItem('cart'))) : [];
 
             store.commit('SET_CART', cart);
 
