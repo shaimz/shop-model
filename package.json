@@ -46,5 +46,8 @@
         "vue-router": "^4.0.10",
         "vuetify": "^3.0.0-alpha.7",
         "vuex": "^4.0.2"
+    },
+    "engines": {
+        "node": "12.18.4"
     }
 }
